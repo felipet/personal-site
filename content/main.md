@@ -23,6 +23,7 @@ My professional career has been divided between the academia, where I have worke
 and private companies. My versatile profile has allowed me to contribute in different areas: from writing scientific
 papers, and presenting results in international symposiums; to designing digital HW for FPGAs or SW code for web services.
 
-Still interested on me? Then, have a look to my
-[**Linkedin**](https://www.linkedin.com/in/felipe-torres-gonz%C3%A1lez-70048721b/)
-profile.
+Still interested on me? Then, have a look at my complete profile at:
+
+<a href="./about/index.html" class="button inline"><button>About me</button></a>
+
