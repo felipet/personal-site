@@ -1,9 +1,11 @@
 {{ define "main" }}
-  {{ if .Content }}
-    <div class="index-content {{ if .Params.framed -}}framed{{- end -}}">
+  {{ with .Site.GetPage "/main" }}
+    <div class="index-content framed">
       {{ .Content }}
     </div>
+  </div>
   {{ end }}
+
   <div class="posts">
     {{ $isntDefault := not (or (eq (trim $.Site.Params.contentTypeName " ") "posts") (eq (trim $.Site.Params.contentTypeName " ") "")) }}
     {{ $contentTypeName := cond $isntDefault (string $.Site.Params.contentTypeName) "posts" }}

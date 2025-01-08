@@ -31,4 +31,15 @@
       text-decoration: none;
     }
   }
+
+  &__social-icons a {
+    display: inline-flex;
+    align-items: left;
+    justify-content: left;
+  }
+
+  &__social-icons a svg {
+    height: 22px;
+    width: 22px;
+  }
 }

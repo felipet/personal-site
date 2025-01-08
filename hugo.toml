@@ -6,8 +6,35 @@ pagination.pagerSize = 5
 
 [params]
   contentTypeName = 'posts'
+  showMenuItems = 2
   themeColor = "orange"
   centerTheme = true
+  framed = true
+  showHeaderIcons = true
+
+  [[params.socialIcons]]
+    name = "email"
+    title = 'Send me an email'
+    url = "mailto:admin@nubecita.eu"
+  [[params.socialIcons]]
+    name = "github"
+    title = 'My Github page'
+    url = "https://github.com/felipet"
+  [[params.socialIcons]]
+    name = "linkedin"
+    title = 'Linkedin profile'
+    url = "https://www.linkedin.com/in/felipe-torres-gonz%C3%A1lez-70048721b/"
+  [[params.socialIcons]]
+    name = "instagram"
+    title = 'My Instagram page'
+    url = "https://instagram.com/feltorgrafo"
+  [[params.socialIcons]]
+    name = "x"
+    title = 'My X profile'
+    url = "https://x.com/felipteg"
+
+[markup.goldmark.renderer]
+  unsafe = true
 
 [languages]
   [languages.en.params]
@@ -32,7 +59,6 @@ pagination.pagerSize = 5
       logoHomeLink = "/"
 
     [languages.en.menu]
-      # Submenus is available since v2.1.0
       # [[languages.en.menu.main]]
       #   identifier = "submenuParent"
       #   name = "Submenu"
@@ -40,12 +66,12 @@ pagination.pagerSize = 5
       #   parent = "submenuParent"
       #   identifier = "anItem"
       #   name = "AnItem"
-#      [[languages.en.menu.main]]
-#        identifier = "about"
-#        name = "About"
-#        url = "/about"
-#      [[languages.en.menu.main]]
-#        identifier = "showcase"
-#        name = "Showcase"
-#        url = "/showcase"
+     [[languages.en.menu.main]]
+       identifier = "about"
+       name = "About"
+       url = "/about"
+     [[languages.en.menu.main]]
+       identifier = "blog"
+       name = "Blog"
+       url = "/posts"
 
