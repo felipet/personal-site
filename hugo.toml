@@ -1,3 +1,51 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://felipe.nubecita.eu/'
+languageCode = 'en-gb'
+title = 'My personal website'
+theme = 're-terminal'
+pagination.pagerSize = 5
+
+[params]
+  contentTypeName = 'posts'
+  themeColor = "orange"
+  centerTheme = true
+
+[languages]
+  [languages.en.params]
+    languageName = "English"
+    title = "Felipe's site"
+    subtitle = "My personal website"
+    owner = "Felipe Torres González"
+    keywords = "blog, developer"
+    copyright = "© 2025 - Felipe Torres González"
+    menuMore = "Show more"
+    readMore = "Read more"
+    readOtherPosts = "Read other posts"
+    newerPosts = "Newer posts"
+    olderPosts = "Older posts"
+    missingContentMessage = "Page not found..."
+    missingBackButtonLabel = "Back to home page"
+    minuteReadingTime = "min read"
+    words = "words"
+
+    [languages.en.params.logo]
+      logoText = "Felipe's site"
+      logoHomeLink = "/"
+
+    [languages.en.menu]
+      # Submenus is available since v2.1.0
+      # [[languages.en.menu.main]]
+      #   identifier = "submenuParent"
+      #   name = "Submenu"
+      # [[languages.en.menu.main]]
+      #   parent = "submenuParent"
+      #   identifier = "anItem"
+      #   name = "AnItem"
+#      [[languages.en.menu.main]]
+#        identifier = "about"
+#        name = "About"
+#        url = "/about"
+#      [[languages.en.menu.main]]
+#        identifier = "showcase"
+#        name = "Showcase"
+#        url = "/showcase"
+
