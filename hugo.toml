@@ -13,6 +13,7 @@ pagination.pagerSize = 5
   showFullContent = false
   showHeaderIcons = true
   showFooterIcons = true
+  enableRobotsTXT = true
 
   [[params.footer.socialIcons]]
     name = "email"
