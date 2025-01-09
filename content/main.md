@@ -25,5 +25,4 @@ papers, and presenting results in international symposiums; to designing digital
 
 Still interested on me? Then, have a look at my complete profile at:
 
-<a href="./about/index.html" class="button inline"><button>About me</button></a>
-
+<a href="./about/index.html" class="button inline">About me</a>
