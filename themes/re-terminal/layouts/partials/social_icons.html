@@ -1,4 +1,4 @@
-<div class="header__social-icons">
+<div class="header__social-icons" style="padding-left: 1rem; margin-top: 0.3rem;">
     {{- range site.Params.socialIcons }}
     <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
         title="{{ (.title | default .name) | title }}">
