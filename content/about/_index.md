@@ -1,7 +1,11 @@
----
-title: "About"
-weight: 1
----
++++
+title = "About"
+date = "2025-01-09"
+description = "A long description about me"
+hideComments = true
+weight = 1
+Toc = true
++++
 
 # Education
 
@@ -26,7 +30,7 @@ I obtained my Bachelor degree on [Computer Science](https://grados.ugr.es/inform
 TODO
 
     January, 2024 up to the present
-    
+
 ## System Administrator at Nubecita
 
 TODO

@@ -6,11 +6,12 @@ pagination.pagerSize = 5
 
 [params]
   contentTypeName = 'posts'
-  showMenuItems = 2
+  showMenuItems = 3
   themeColor = "orange"
   centerTheme = true
   framed = true
   showHeaderIcons = true
+  showFullContent = false
 
   [[params.socialIcons]]
     name = "email"
@@ -74,4 +75,8 @@ pagination.pagerSize = 5
        identifier = "blog"
        name = "Blog"
        url = "/posts"
+     [[languages.en.menu.main]]
+       identifier = "projects"
+       name = "Projects"
+       url = "/projects"
 
