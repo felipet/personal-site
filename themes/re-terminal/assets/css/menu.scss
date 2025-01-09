@@ -53,6 +53,10 @@
       &:not(:last-of-type) {
         margin-right: 20px;
       }
+
+      &:hover {
+        color: color-mix(in srgb, var(--accent), transparent 5%);
+      }
     }
 
     @media (max-width: $phone) {

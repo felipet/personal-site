@@ -1,11 +1,11 @@
 .footer {
-  padding: 40px 0;
   flex-grow: 0;
   opacity: .5;
   display: flex;
   justify-content: $centerTheme;
 
   &__inner {
+    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,6 +24,11 @@
 
   &__social-icons a {
     align-items: center;
+    text-decoration: none;
+
+    &:hover {
+      color: color-mix(in srgb, var(--accent), transparent 5%);
+    }
   }
 
   &__social-icons a svg {

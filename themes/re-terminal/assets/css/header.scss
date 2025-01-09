@@ -36,6 +36,10 @@
     display: inline-flex;
     align-items: left;
     justify-content: left;
+
+    &:hover {
+      color: color-mix(in srgb, var(--accent), transparent 5%);
+    }
   }
 
   &__social-icons a svg {
