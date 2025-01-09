@@ -10,29 +10,39 @@ pagination.pagerSize = 5
   themeColor = "orange"
   centerTheme = true
   framed = true
-  showHeaderIcons = true
   showFullContent = false
+  showHeaderIcons = true
+  showFooterIcons = true
 
-  [[params.socialIcons]]
+  [[params.footer.socialIcons]]
     name = "email"
     title = 'Send me an email'
     url = "mailto:admin@nubecita.eu"
-  [[params.socialIcons]]
+  [[params.footer.socialIcons]]
     name = "github"
     title = 'My Github page'
     url = "https://github.com/felipet"
-  [[params.socialIcons]]
+  [[params.footer.socialIcons]]
     name = "linkedin"
     title = 'Linkedin profile'
     url = "https://www.linkedin.com/in/felipe-torres-gonz%C3%A1lez-70048721b/"
-  [[params.socialIcons]]
+  [[params.footer.socialIcons]]
     name = "instagram"
     title = 'My Instagram page'
     url = "https://instagram.com/feltorgrafo"
-  [[params.socialIcons]]
+  [[params.footer.socialIcons]]
     name = "x"
     title = 'My X profile'
     url = "https://x.com/felipteg"
+
+  [[params.header.socialIcons]]
+    name = "github"
+    title = 'My Github page'
+    url = "https://github.com/felipet"
+  [[params.header.socialIcons]]
+    name = "linkedin"
+    title = 'Linkedin profile'
+    url = "https://www.linkedin.com/in/felipe-torres-gonz%C3%A1lez-70048721b/"
 
 [markup.goldmark.renderer]
   unsafe = true

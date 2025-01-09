@@ -22,6 +22,15 @@
     color: inherit;
   }
 
+  &__social-icons a {
+    align-items: center;
+  }
+
+  &__social-icons a svg {
+    height: 22px;
+    width: 22px;
+  }
+
   .copyright {
     display: flex;
     flex-flow: row wrap;
