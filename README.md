@@ -1,8 +1,9 @@
-# personal-site
+# Felipe Torres González's website
 
-My personal web space using Hugo
+My personal web space using Hugo.
 
-This is a static page for [https://felipe.nubecita.eu](https://felipe.nubecita.eu).
+This is a static page for [felipe.nubecita.eu](https://felipe.nubecita.eu) which is deployed to my
+personal web server [nubecita.eu](https://nubecita.eu).
 
 ## Credits
 
