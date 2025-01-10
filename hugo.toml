@@ -6,7 +6,7 @@ pagination.pagerSize = 5
 
 [params]
   contentTypeName = 'posts'
-  showMenuItems = 3
+  showMenuItems = 4
   themeColor = "orange"
   centerTheme = true
   framed = true
@@ -71,23 +71,29 @@ pagination.pagerSize = 5
       logoHomeLink = "/"
 
     [languages.en.menu]
-      # [[languages.en.menu.main]]
-      #   identifier = "submenuParent"
-      #   name = "Submenu"
-      # [[languages.en.menu.main]]
-      #   parent = "submenuParent"
-      #   identifier = "anItem"
-      #   name = "AnItem"
-     [[languages.en.menu.main]]
-       identifier = "about"
-       name = "About"
-       url = "/about"
-     [[languages.en.menu.main]]
-       identifier = "blog"
-       name = "Blog"
-       url = "/posts"
-     [[languages.en.menu.main]]
-       identifier = "projects"
-       name = "Projects"
-       url = "/projects"
+      [[languages.en.menu.main]]
+        identifier = "about"
+        name = "About"
+        url = "/about"
+      [[languages.en.menu.main]]
+        identifier = "blog"
+        name = "Blog"
+        url = "/posts"
+      [[languages.en.menu.main]]
+        identifier = "projects"
+        name = "My Projects"
+        url = "/projects"
+      [[languages.en.menu.main]]
+         identifier = "other"
+         name = "Other"
+      [[languages.en.menu.main]]
+         parent = "other"
+         identifier = "tags"
+         name = "Tags"
+         url = "/tags"
+      [[languages.en.menu.main]]
+         parent = "other"
+         identifier = "categories"
+         name = "Categories"
+         url = "/categories"
 
