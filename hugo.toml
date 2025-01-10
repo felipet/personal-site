@@ -26,7 +26,7 @@ pagination.pagerSize = 5
   [[params.footer.socialIcons]]
     name = "linkedin"
     title = 'Linkedin profile'
-    url = "https://www.linkedin.com/in/felipe-torres-gonz%C3%A1lez-70048721b/"
+    url = "https://www.linkedin.com/in/felipe-torres-gonzález"
   [[params.footer.socialIcons]]
     name = "instagram"
     title = 'My Instagram page'
@@ -43,7 +43,7 @@ pagination.pagerSize = 5
   [[params.header.socialIcons]]
     name = "linkedin"
     title = 'Linkedin profile'
-    url = "https://www.linkedin.com/in/felipe-torres-gonz%C3%A1lez-70048721b/"
+    url = "https://www.linkedin.com/in/felipe-torres-gonzález"
 
 [markup.goldmark.renderer]
   unsafe = true
