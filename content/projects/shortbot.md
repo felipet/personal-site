@@ -1,6 +1,6 @@
 +++
 date = '2025-01-09T13:48:20+01:00'
-draft = true
+draft = false
 title = 'Shortbot'
 cover= 'img/shortbot_logo_small.png'
 description = 'A Telegram bot that monitors short positions in the Ibex35'
