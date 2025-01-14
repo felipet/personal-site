@@ -1,6 +1,7 @@
 +++
-title = "My fancy new blog"
+title = "My Fancy New Blog"
 date = "2025-01-09"
+edited = "2025-01-14"
 author = "Felipe Torres González"
 description = "The very first post of my new blog!"
 hideComments = true
