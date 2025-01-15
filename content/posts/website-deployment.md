@@ -1,5 +1,6 @@
 +++
 date = '2025-01-10T14:07:23+01:00'
+update = '2025-01-15T10:37:00+01:00'
 title = 'Automated Website Deployment'
 author = "Felipe Torres González"
 description = "This blog post is a recap of all the steps needed to set up a deployment pipeline for a Hugo-based website hosted in GitHub."
@@ -13,7 +14,7 @@ toc = true
 
 In this entry, I'll explain how to achieve an automated deployment after a change in a website built with Hugo, and deployed on Ubuntu Server with Apache thanks to [Webhook](https://github.com/adnanh/webhook).
 
-There are many hosting services in which a page built with Hugo can be deployed for free. This is already covered by the [official docs](https://gohugo.io/hosting-and-deployment/). Using an external hosting service is the way to go for most people, but what if you already have a server? 
+There are many hosting services in which a page built with Hugo can be deployed for free. This is already covered by the [official docs](https://gohugo.io/hosting-and-deployment/). Using an external hosting service is the way to go for most people, but what if you already have a server?
 
 My plan was to host my new personal site on my server: [Nubecita](https://nubecita.eu). It runs [Ubuntu Server 24.04](https://ubuntu.com/download/server) and Apache as web server. One of the most common combinations for hosting stuff on the Internet. Aside from that, I push my website to a repository hosted in [GitHub](https://github.com/felipet/personal-site). My goal was to automate the process of deployment, so whenever I push a new change to the repository, it gets deployed into the production web server.
 
@@ -26,6 +27,8 @@ Before we start configuring services and writing scripts, we'll set up our syste
 ```bash
 sudo apt install webhook
 ```
+
+**Update**: You'll need Webhook >= 2.8.2, as that version includes all the changes to run under Systemd.
 
 Also, I wouldn't recommend using Hugo from the Snap Store, as it would restrict you to having your deployment scripts in a system directory rather than your home directory. But that's up to you, so bear in mind that you can't use Hugo from the Snap Store to follow this guide.
 
@@ -104,7 +107,7 @@ As I said, you need to run this service as `root` in order to have enough privil
 
 ### Set Up a New Webhook
 
-You might have noticed that we passed as argument to Webhook the file `/var/webhooks/hooks.json`. Now, we'll pay some attention to such file. 
+You might have noticed that we passed as argument to Webhook the file `/var/webhooks/hooks.json`. Now, we'll pay some attention to such file.
 
 I chose the path `/var/webhooks` but you can put it anywhere you like. I also gave `www-data` permissions to read and write on that path, as I aim to deploy my repository right there every time the service is called.
 
@@ -192,14 +195,14 @@ We can use Curl to send a POST request to the endpoint in which we installed our
 ```bash
 curl -X 'POST' \
   'https://nubecita.eu/webhook/deploy_felipe_site'
-Hook rules were not satisfied.%     
+Hook rules were not satisfied.%
 ```
 
 As we didn't send our credentials nor any further information along the request, our service tells us that we didn't satisfy the rules that we defined in `hooks.json`. That's great, our backend responds, and blocks dummy requests. Let's complete our deployment process with the last step.
 
 ## Create a Webhook in GitHub
 
-We reached the last needed step. We need to configure a webhook in our repository in GitHub. 
+We reached the last needed step. We need to configure a webhook in our repository in GitHub.
 
 The process is explained in this [page](https://docs.github.com/en/webhooks/using-webhooks/creating-webhooks). However, let's summarise the steps:
 
