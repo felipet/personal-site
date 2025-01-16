@@ -14,23 +14,23 @@ description = 'A collaborative cocktail data base'
 
 # Goals
 
-The main goal of the project is to deliver a web site alike to AeroPrecipe, in which people can post their recipes, and develop together a data base for cocktail recipes.
+The main goal of the project is to deliver a web site alike to AeroPrecipe, in which users can post their recipes, and develop together a data base for cocktail recipes.
 
-Recipes will be organised, based on categories, ingredients and other useful tokens, so it will be easy for people to find recipes based on types of liquors, a types of glass or anything regarding cocktails. Also, a voting system will be used to help highlight the recipes that most of the people enjoy.
+Recipes will be organised, based on categories, ingredients and so on, so it will be easy for people to find recipes based on types of liquors, types of glass or any other attributes. Also, a voting system will be used to help highlight the recipes that most of the people enjoy.
 
-From a more technical point of view, the project aims to deliver a segregated back-end service from the main front-end that people would use to access the information of the database. This way, people can develop their own clients for specific platforms, such as Android, simply connecting to the back-end service.
+From a more technical point of view, the project aims to deliver a segregated back-end service from the main front-end that people would use to access the information of the database. This way, people with programming skills can develop their own clients for specific platforms, such as Android, simply connecting to the back-end service.
 
 # Front-end
 
 The main access point to the data base will be a web page that people could use to simply access cocktail recipes, or they could register and post their own recipes.
 
-The development of the front-end is still in an early stage. If you are interested on it, please visit this repository in GitHub:
+The development of the front-end is still in an early stage. If you are interested in it, please visit this repository in GitHub:
 
 <a href="https://github.com/felipet/lacoctelera_frontend" class="button inline">Front-end repository in GitHub</a>
 
 # Back-end
 
-An open back-end service is developed to allow other interested people to connect their own clients to the open database. Despite developing a segregated solution requires more work, we believe this would encourage people to develop clients for other platforms in the future.
+An open back-end service is developed to allow other interested people to connect their own clients to the open database. Despite developing a segregated solution requires more work, we believe this would encourage programmers to develop clients for other platforms in the future.
 
 The back-end offers a REST API whose documentation can be accessed at the projects page:
 
@@ -40,7 +40,7 @@ The API includes several resources that allow accessing data regarding ingredien
 
 ## Development
 
-The back-end service is close to reach the first stable version. If you are interested on the development or the source code, it is open source and available at:
+The back-end service is close to reach the first stable version. If you are interested in the development or the source code, it is open source and available at:
 
 <a href="https://github.com/felipet/lacoctelera_backend" class="button inline">Back-end repository in GitHub</a>
 
