@@ -1,6 +1,6 @@
 +++
 date = '2025-02-10T18:02:49+01:00'
-title = 'A Fiance Data Harvesting Library'
+title = 'A Finance Data Harvesting Library'
 author = "Felipe Torres González"
 description = "I've wrote a new library in Rust to harvest financial data from web sites into a database."
 categories = ['shortbot']
