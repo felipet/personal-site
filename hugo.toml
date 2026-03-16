@@ -19,7 +19,11 @@ pagination.pagerSize = 5
   showFullContent = false
   showHeaderIcons = true
   showFooterIcons = true
-  enableRobotsTXT = true
+  enableRobotsTXT = true  
+
+  [author]
+    name = "Felipe Torres González"
+    email = "admin@nubecita.eu"
 
   [[params.footer.socialIcons]]
     name = "email"
